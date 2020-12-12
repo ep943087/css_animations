@@ -1,0 +1,225 @@
+
+:root{
+    --purple: #351435;
+}
+
+.container{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+}
+
+.container div{
+    margin: 5px;
+    text-decoration: none;
+}
+
+a{
+    margin: 5px;
+}
+
+#hover-1{
+    padding: 20px;
+    color: #272727;
+    font-family: sans-serif;
+    font-size: 3rem;
+    border: 5px solid #272727;
+    padding: 40px 80px;
+    position: relative;
+    overflow: hidden;
+}
+
+#hover-1:before{
+    z-index: -1;
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: #fff200;
+    height: 100%;
+    width: 100%;
+    transition: transform 500ms ease-in;
+    transform-origin: bottom right;
+    transform: rotate(90deg);
+}
+
+#hover-1:hover:before{
+    transform: rotate(0);
+}
+
+#hover-2{
+    padding: 20px;
+    text-decoration: none;
+    color: #351435;
+    font-family: sans-serif;
+    font-size: 3rem;
+    border: 5px solid #351435;
+    padding: 40px 80px;
+    position: relative;
+    transition: all 500ms ease-in;
+    overflow: hidden;
+}
+
+#hover-2:before{
+    z-index: -1;
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: #351435;
+    height: 100%;
+    width: 110%;
+    transform: translateY(-100%);
+    transition: inherit;
+}
+
+#hover-2:hover{
+    color: white;
+}
+
+#hover-2:hover:before{
+    transform: translate(0);
+}
+
+#hover-3{
+    padding: 20px;
+    text-decoration: none;
+    color: #351435;
+    font-family: sans-serif;
+    font-size: 3rem;
+    border: 5px solid #351435;
+    padding: 40px 80px;
+    position: relative;
+    transition: all 500ms ease-in;
+    overflow: hidden;
+}
+#hover-3:hover{
+    color: white;
+}
+#hover-3:before{
+    z-index: -1;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #262626;
+    transition: 1s;
+    transform: rotateX(90deg);
+}
+
+#hover-3:hover:before{
+    transform: rotateX(0) rotateY(0);
+}
+#hover-3:after{
+    z-index: -1;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #262626;
+    transition: 1s;
+    transform: rotateY(90deg);
+}
+
+#hover-3:hover:after{
+    transform: rotateX(0) rotateY(0);
+}
+
+#hover-4{
+    padding: 20px;
+    text-decoration: none;
+    color: #351435;
+    font-family: monospace;
+    font-size: 3rem;
+    border: 5px solid #351435;
+    padding: 40px 80px;
+    position: relative;
+    transition: all 1s ease-in;
+    overflow: hidden;
+    font-weight: 300;
+    letter-spacing: -2px;
+}
+
+#hover-4:hover{
+    font-weight: 900;
+    letter-spacing: 6px;
+    border-width: 7px;
+}
+
+#hover-5{
+    padding: 20px;
+    text-decoration: none;
+    color: #351435;
+    font-family: sans-serif;
+    font-size: 3rem;
+    border: 5px solid #351435;
+    padding: 40px 80px;
+    position: relative;
+    transition: all 500ms ease-in;
+    overflow: hidden;
+}
+
+#hover-5:before{
+    content: 'HELP!';
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: #351435;
+    height: 100%;
+    width: 100%;
+    transform: translateY(-100%);
+    transition: inherit;
+}
+
+
+#hover-5:hover:before{
+    transform: translate(0);
+}
+
+#hover-6{
+    padding: 20px;
+    text-decoration: none;
+    color: #000000;
+    font-family: sans-serif;
+    font-size: 3rem;
+    border: 5px solid #000000;
+    padding: 40px 80px;
+    position: relative;
+    transition: all 500ms ease-in;
+    overflow: hidden;
+}
+
+#hover-6:before{
+    content: '';
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: white;
+    height: 20%;
+    width: 100%;
+    transform: translateY(250%) translateX(-100%) rotate(45deg);
+    transition: inherit;
+}
+
+#hover-6:hover{
+    background-color: #f44336;
+    color: white;
+}
+
+#hover-6:hover:before{
+    transform: translateX(100%) rotate(45deg);
+}
