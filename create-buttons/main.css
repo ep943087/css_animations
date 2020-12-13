@@ -5,28 +5,30 @@
 
 .container{
     width: 100vw;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 11rem);
+    grid-template-rows: 6rem;
+    grid-auto-flow: row;
+    grid-gap: 1rem;
 }
 
-.container div{
-    margin: 5px;
-    text-decoration: none;
-}
 
 a{
     margin: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    text-decoration: none;
 }
 
 #hover-1{
     padding: 20px;
     color: #272727;
     font-family: sans-serif;
-    font-size: 3rem;
+    font-size: 1rem;
     border: 5px solid #272727;
-    padding: 40px 80px;
+    padding: 20px 40px;
     position: relative;
     overflow: hidden;
 }
@@ -54,9 +56,9 @@ a{
     text-decoration: none;
     color: #351435;
     font-family: sans-serif;
-    font-size: 3rem;
+    font-size: 1rem;
     border: 5px solid #351435;
-    padding: 40px 80px;
+    padding: 20px 40px;
     position: relative;
     transition: all 500ms ease-in;
     overflow: hidden;
@@ -88,9 +90,9 @@ a{
     text-decoration: none;
     color: #351435;
     font-family: sans-serif;
-    font-size: 3rem;
+    font-size: 1rem;
     border: 5px solid #351435;
-    padding: 40px 80px;
+    padding: 20px 40px;
     position: relative;
     transition: all 500ms ease-in;
     overflow: hidden;
@@ -136,9 +138,9 @@ a{
     text-decoration: none;
     color: #351435;
     font-family: monospace;
-    font-size: 3rem;
+    font-size: 1rem;
     border: 5px solid #351435;
-    padding: 40px 80px;
+    padding: 20px 40px;
     position: relative;
     transition: all 1s ease-in;
     overflow: hidden;
@@ -157,9 +159,9 @@ a{
     text-decoration: none;
     color: #351435;
     font-family: sans-serif;
-    font-size: 3rem;
+    font-size: 1rem;
     border: 5px solid #351435;
-    padding: 40px 80px;
+    padding: 20px 40px;
     position: relative;
     transition: all 500ms ease-in;
     overflow: hidden;
@@ -191,9 +193,9 @@ a{
     text-decoration: none;
     color: #000000;
     font-family: sans-serif;
-    font-size: 3rem;
+    font-size: 1rem;
     border: 5px solid #000000;
-    padding: 40px 80px;
+    padding: 20px 40px;
     position: relative;
     transition: all 500ms ease-in;
     overflow: hidden;
